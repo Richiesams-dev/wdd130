@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #3498DB; /*Primary color*/
+    --secondary-color: #FFC107; /*Secondary color*/
+    --accent-color: #2ECC40; /*Accent color*/
+    --accent-color2: #944B00; /*Accent color hover*/
+    --text-color: #2c3e50; /*Text color*/
+    --heading-font: 'poppins'; /*Font for headings*/
+    --paragraph-font: 'Roboto, condensed' /*Font for paragraphs*/
+  }
+  
+h1, h2 {
+    font-family: var(--heading-font);
+    color: #944B00;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ .hero article img {
+    position: relative;
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    float: right;
+    margin-left: 200px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    background-color: rgb(175, 169, 169);
+    color: var(--accent-color2);
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    padding-left: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 10px;
+    left: px;
+}
+
+.hero article {
+    position: absolute;
+    background-color: #8bb7d4;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 0.6;
+    top: 80px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article {
+    margin: 10px;
+}
+
+/* footer p {
+    color: red;
+} */
