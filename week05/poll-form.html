@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form _ User Poll</title>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Fedidel Richman Bibowei | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form action="/action-page">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Fullname:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail">
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="brave">Brave</option>
+                </select>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <label for="feedback">List the places you have lived</label>
+                <textarea name="feedback" id="feedback" rows="4"
+                    placeholder="Otovwodo Ughelli, Urehvwen Ewvreni, Iyahen Dumiz"></textarea>
+                <button type="submit">Submit Poll</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; | HTML From - User Poll Activity | Fedidel Richman Bibowei</p>
+    </footer>
+</body>
+
+</html>

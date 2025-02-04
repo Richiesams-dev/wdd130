@@ -3,9 +3,48 @@
     --secondary-color: #FFC107; /*Secondary color*/
     --accent-color: #2ECC40; /*Accent color*/
     --accent-color2: #944B00; /*Accent color hover*/
-    --text-color: #2c3e50; /*Text color*/
     --heading-font: 'poppins'; /*Font for headings*/
-    --paragraph-font: 'Roboto, condensed' /*Font for paragraphs*/
+    --paragraph-font: list 'Roboto, condensed' /*Font for paragraphs*/
+  }
+
+  header, footer {
+	display: grid;
+    margin: 1rem auto;
+    background-color: var(--primary-color);
+	grid-template-columns: 120px 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: flex;
+	flex-wrap: wrap;
+    padding: 0;
+	list-style: none;
+  }
+
+  .navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+  header img {
+    margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
   }
   
 h1, h2 {
@@ -15,11 +54,13 @@ h1, h2 {
 
 p {
     font-family: var(--paragraph-font);
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
-a {
+nav a {
     text-decoration: none;
+    padding: 1rem;
+    border: 1px solid black;
 }
 
  .hero article img {
@@ -31,8 +72,52 @@ a {
     margin-left: 200px;
 }
 
-footer a {
+/* footer {
+    display: flex;
+} */
+
+footer p {
+    /* display: flex; */
+    justify-self: center;
+    align-self: center;
+}
+
+footer a img {
+    /* display: flex; */
+    justify-self: flex-end;
+    align-self: center;
     text-decoration: none;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+section p {
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+section div {
+grid-column: 1/5;
+}
+
+section div p {
+
+}
+
+section div img {
+    /* margin: 0 20px; */
 }
 
 .hero {
@@ -65,7 +150,6 @@ footer a {
 
 .hero img {
     display: block;
-    width: 100%;
     height: auto;
 }
 
@@ -73,6 +157,24 @@ article {
     margin: 10px;
 }
 
-/* footer p {
-    color: red;
-} */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+}
+
+footer p {
+    color: white;
+    flex: 1;
+}
