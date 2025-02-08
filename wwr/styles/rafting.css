@@ -72,22 +72,18 @@ nav a {
     margin-left: 200px;
 }
 
-/* footer {
-    display: flex;
-} */
-
 footer p {
     /* display: flex; */
     justify-self: center;
     align-self: center;
 }
 
-footer a img {
-    /* display: flex; */
+/* footer a img {
+    display: flex;
     justify-self: flex-end;
     align-self: center;
     text-decoration: none;
-}
+} */
 
 section {
     display: grid;
@@ -110,14 +106,6 @@ section p {
 
 section div {
 grid-column: 1/5;
-}
-
-section div p {
-
-}
-
-section div img {
-    /* margin: 0 20px; */
 }
 
 .hero {
@@ -177,4 +165,11 @@ footer div {
 footer p {
     color: white;
     flex: 1;
+}
+
+.employee-profile {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    /* align-items: center; */
 }
