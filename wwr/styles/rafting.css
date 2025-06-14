@@ -15,6 +15,118 @@
     box-sizing: border-box;
 }
 
+/* ===== HOME PAGE STYLES ===== */
+.newsletter {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    position: relative;
+    background-color: var(--accent2-color);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.cta {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+}
+
+.cta h2 {
+    color: var(--dark-text);
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: var(--accent2-color);
+    transform: translateY(-2px);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    padding: 1rem;
+    color: var(--primary-color);
+}
+
+.grid-item p {
+    padding: 0 1rem 1rem;
+}
+
+/* ===== ABOUT PAGE STYLES ===== */
+
 .logo {
     display: flex;
     align-items: center;
@@ -65,7 +177,7 @@ h1, h2 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: #fff; /*white text makes sure there is enough contrast with the background-color*/
 }
 
@@ -229,6 +341,87 @@ footer a {
 .hero article img:hover {
     transform: translateY(-5px);
 }
+
+/* ===== TRIPS PAGE SPECIFIC STYLES ===== */
+.trip-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.trip-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.trip-info ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.trip-info li {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--accent2-color);
+    margin: 1rem 0;
+}
+
+.trip-table {
+    margin: 3rem 0;
+    overflow-x: auto;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trip-table th, 
+.trip-table td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: rgba(74, 148, 213, 0.1);
+}
+
+.trip-table tr:hover {
+    background-color: rgba(74, 148, 213, 0.2);
+}
+
+/* ===== CONTACT PAGE STYLES ===== */
 
 main div img {
     width: 840px;
@@ -418,14 +611,14 @@ button {
     width: 100%;
     margin: 1rem auto;
     border: none;
+    border-radius: 8px;
     color: white;
     background-color: var(--primary-color);
 }
 
 button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     color: var(--light-text);
-    font-size: 1.7rem;
 }
 
 #contact-us {
