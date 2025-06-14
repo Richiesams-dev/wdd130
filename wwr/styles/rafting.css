@@ -124,6 +124,7 @@
 .grid-item p {
     padding: 0 1rem 1rem;
 }
+/* ===== END OF HOME PAGE STYLES ===== */
 
 /* ===== ABOUT PAGE STYLES ===== */
 
@@ -341,8 +342,9 @@ footer a {
 .hero article img:hover {
     transform: translateY(-5px);
 }
+/* ===== END OF ABOUT PAGE STYLES ===== */
 
-/* ===== TRIPS PAGE SPECIFIC STYLES ===== */
+/* ===== TRIPS PAGE STYLES ===== */
 .trip-descriptions {
     display: flex;
     flex-direction: column;
@@ -420,6 +422,7 @@ footer a {
 .trip-table tr:hover {
     background-color: rgba(74, 148, 213, 0.2);
 }
+/* ===== END OF TRIPS PAGE STYLES ===== */
 
 /* ===== CONTACT PAGE STYLES ===== */
 
@@ -634,3 +637,4 @@ button:hover {
     font-weight: 900;
     font-size: 1.2rem;
 }
+/* ===== END OF CONTACT PAGE STYLES ===== */
