@@ -598,7 +598,7 @@ input[type="email"] {
     font-size: 1.2rem;
 }
 
-input[type="email"] {
+.form-container >.column1 > input[type="email"] {
     margin-left: 30px;
 }
 
@@ -611,7 +611,6 @@ button {
     width: 100%;
     margin: 1rem auto;
     border: none;
-    border-radius: 8px;
     color: white;
     background-color: var(--primary-color);
 }
